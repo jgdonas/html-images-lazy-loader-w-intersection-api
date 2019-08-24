@@ -3,7 +3,7 @@
 This is my previous **[simplest image lazy loader](https://github.com/jgdonas/html-images-lazy-loader)** improved version using using the [Intersection Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API) for your website, made just for fun. This module allows you 'mark' your images to be loaded only if the user is close enough (depending on your preferences), so you can save bandwidth as long as only neccesarry pictures will be loaded.
 
 All you have to do is:
-  - Use any css selector to mark your images as 'lazy'. You could even use "img" selector if you want all your pictures to behave this lazy way.
+  - Use any css selector to mark your images as 'lazy'. You could even use "img" selector if you want all your pictures to behave this lazy way. You also need to set an attribute called 'data-lazy-src' with the real src to be loaded at the proper moment, and the 'src' attribute set to a placeholder image, for example.
   - Choose an offset value, i.e.: the distance in pixels from the bottom of the viewport for the pictures to be loaded.
   - Include lazyLoad.js as any other script in your webpage
   - Invoke htmlImagesLazyLoader.init() with the both the correct selector and offset, that is, for example:
